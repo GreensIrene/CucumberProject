@@ -1,0 +1,173 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "verifying login details with valid credentials",
+        "description": "",
+        "id": "verifying-adactin-hotel-details;verifying-login-details-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7344535985,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on the Adactin Login page",
+            "match": {
+              "location": "LoginPageSetup.user_is_on_the_Adactin_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1422277322,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user should login \"prakash2857\" and \"Snkl@2857\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"prakash2857\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Snkl@2857\"",
+                  "offset": 36
+                }
+              ],
+              "location": "LoginPageSetup.user_should_login_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1821059261,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should enter the Hotel details to search \"Sydney\" and \"Hotel Sunshine\" and \"Double\" and \"2 - Two\" and \"09/09/2021\" and \"10/09/2021\" and \"2 - Two\" and \"1 - One\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sydney\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"Hotel Sunshine\"",
+                  "offset": 59
+                },
+                {
+                  "val": "\"Double\"",
+                  "offset": 80
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 93
+                },
+                {
+                  "val": "\"09/09/2021\"",
+                  "offset": 107
+                },
+                {
+                  "val": "\"10/09/2021\"",
+                  "offset": 124
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 141
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 155
+                }
+              ],
+              "location": "LoginPageSetup.user_should_enter_the_Hotel_details_to_search(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 705453519,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should confirm the details",
+            "match": {
+              "location": "LoginPageSetup.user_should_confirm_the_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1183044640,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user sholud confim the names and payment details \"Prakash\"and \"Selvaraj\" and \"Namakkal\" and \"0123456789123456\" and \"VISA\" and \"June\" and \"2022\" and \"358\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Prakash\"",
+                  "offset": 49
+                },
+                {
+                  "val": "\"Selvaraj\"",
+                  "offset": 62
+                },
+                {
+                  "val": "\"Namakkal\"",
+                  "offset": 77
+                },
+                {
+                  "val": "\"0123456789123456\"",
+                  "offset": 92
+                },
+                {
+                  "val": "\"VISA\"",
+                  "offset": 115
+                },
+                {
+                  "val": "\"June\"",
+                  "offset": 126
+                },
+                {
+                  "val": "\"2022\"",
+                  "offset": 137
+                },
+                {
+                  "val": "\"358\"",
+                  "offset": 148
+                }
+              ],
+              "location": "LoginPageSetup.user_sholud_confim_the_names_and_payment_details(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6098461911,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should verify success message",
+            "match": {
+              "location": "LoginPageSetup.user_should_verify_success_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "verifying Adactin Hotel Details",
+    "description": "",
+    "id": "verifying-adactin-hotel-details",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/Login.feature",
+    "tags": []
+  }
+]
