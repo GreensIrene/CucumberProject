@@ -14,8 +14,8 @@ public class HomePage extends Base{
 	@FindBy(xpath = "//a[text()='Restaurant']")
 	private WebElement homePageLogo;
 
-	@FindBy(xpath = "//a[text()='CONTACT']")
-	private WebElement contactMenu;
+	@FindBy(xpath = "//a[text()='RESERVATION']")
+	private WebElement reservationMenu;
 
 	public WebElement getHomePageLogo() {
 		return homePageLogo;
@@ -25,12 +25,12 @@ public class HomePage extends Base{
 		this.homePageLogo = homePageLogo;
 	}
 
-	public WebElement getContactMenu() {
-		return contactMenu;
+	public WebElement getreservationMenu() {
+		return reservationMenu;
 	}
 
 	public void setContactMenu(WebElement contactMenu) {
-		this.contactMenu = contactMenu;
+		this.reservationMenu = contactMenu;
 	}
 
 
