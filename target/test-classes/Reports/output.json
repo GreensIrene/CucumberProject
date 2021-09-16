@@ -1,173 +1,208 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 13,
-        "name": "verifying login details with valid credentials",
+        "line": 4,
+        "name": "Home page validations",
         "description": "",
-        "id": "verifying-adactin-hotel-details;verifying-login-details-with-valid-credentials;;2",
+        "id": "smoke-test-automation;home-page-validations",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7344535985,
+              "duration": 2635096100,
               "status": "passed"
             },
-            "line": 4,
-            "name": "user is on the Adactin Login page",
+            "line": 5,
+            "name": "User land on restaurant application",
             "match": {
-              "location": "LoginPageSetup.user_is_on_the_Adactin_Login_page()"
+              "location": "ResStepDef.user_land_on_restaurant_application()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1422277322,
+              "duration": 174171400,
               "status": "passed"
             },
-            "line": 5,
-            "name": "user should login \"prakash2857\" and \"Snkl@2857\"",
+            "line": 6,
+            "name": "User verify the header logo present in page",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"prakash2857\"",
-                  "offset": 18
-                },
-                {
-                  "val": "\"Snkl@2857\"",
-                  "offset": 36
-                }
-              ],
-              "location": "LoginPageSetup.user_should_login_and(String,String)"
+              "location": "ResStepDef.user_verify_the_header_logo_present_in_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ResAp"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Contact us page validations",
+        "description": "",
+        "id": "smoke-test-automation;contact-us-page-validations",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 130225700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click on contact us link",
+            "match": {
+              "location": "ResStepDef.user_click_on_contact_us_link()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1821059261,
+              "duration": 445500300,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user should enter the Hotel details to search \"Sydney\" and \"Hotel Sunshine\" and \"Double\" and \"2 - Two\" and \"09/09/2021\" and \"10/09/2021\" and \"2 - Two\" and \"1 - One\"",
+            "line": 10,
+            "name": "User Enter First Name",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Sydney\"",
-                  "offset": 46
-                },
-                {
-                  "val": "\"Hotel Sunshine\"",
-                  "offset": 59
-                },
-                {
-                  "val": "\"Double\"",
-                  "offset": 80
-                },
-                {
-                  "val": "\"2 - Two\"",
-                  "offset": 93
-                },
-                {
-                  "val": "\"09/09/2021\"",
-                  "offset": 107
-                },
-                {
-                  "val": "\"10/09/2021\"",
-                  "offset": 124
-                },
-                {
-                  "val": "\"2 - Two\"",
-                  "offset": 141
-                },
-                {
-                  "val": "\"1 - One\"",
-                  "offset": 155
-                }
-              ],
-              "location": "LoginPageSetup.user_should_enter_the_Hotel_details_to_search(String,String,String,String,String,String,String,String)"
+              "location": "ResStepDef.user_Enter_First_Name()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 705453519,
+              "duration": 239074900,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user should confirm the details",
+            "line": 11,
+            "name": "User Enter Last Name",
             "match": {
-              "location": "LoginPageSetup.user_should_confirm_the_details()"
+              "location": "ResStepDef.user_Enter_Last_Name()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1183044640,
+              "duration": 175919500,
               "status": "passed"
             },
-            "line": 8,
-            "name": "user sholud confim the names and payment details \"Prakash\"and \"Selvaraj\" and \"Namakkal\" and \"0123456789123456\" and \"VISA\" and \"June\" and \"2022\" and \"358\"",
+            "line": 12,
+            "name": "User Enter Phone Number",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Prakash\"",
-                  "offset": 49
-                },
-                {
-                  "val": "\"Selvaraj\"",
-                  "offset": 62
-                },
-                {
-                  "val": "\"Namakkal\"",
-                  "offset": 77
-                },
-                {
-                  "val": "\"0123456789123456\"",
-                  "offset": 92
-                },
-                {
-                  "val": "\"VISA\"",
-                  "offset": 115
-                },
-                {
-                  "val": "\"June\"",
-                  "offset": 126
-                },
-                {
-                  "val": "\"2022\"",
-                  "offset": 137
-                },
-                {
-                  "val": "\"358\"",
-                  "offset": 148
-                }
-              ],
-              "location": "LoginPageSetup.user_sholud_confim_the_names_and_payment_details(String,String,String,String,String,String,String,String)"
+              "location": "ResStepDef.user_Enter_Phone_Number()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 6098461911,
+              "duration": 188420900,
               "status": "passed"
             },
-            "line": 9,
-            "name": "user should verify success message",
+            "line": 13,
+            "name": "User Enter Guest Number",
             "match": {
-              "location": "LoginPageSetup.user_should_verify_success_message()"
+              "location": "ResStepDef.user_Enter_Guest_Number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 155680600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User Enter State",
+            "match": {
+              "location": "ResStepDef.user_Enter_State()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 161912600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User Enter Email",
+            "match": {
+              "location": "ResStepDef.user_Enter_Email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 125684000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User Enter Reservation Date",
+            "match": {
+              "location": "ResStepDef.user_Enter_Reservation_Date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 159573200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User Enter Subject",
+            "match": {
+              "location": "ResStepDef.user_Enter_Subject()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 240868100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click Reserve Button",
+            "match": {
+              "location": "ResStepDef.user_click_Reserve_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42206900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User success message in the next page",
+            "match": {
+              "location": "ResStepDef.user_success_message_in_the_next_page()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ResAp"
           }
         ]
       }
     ],
-    "name": "verifying Adactin Hotel Details",
+    "name": "Smoke test Automation",
     "description": "",
-    "id": "verifying-adactin-hotel-details",
+    "id": "smoke-test-automation",
     "keyword": "Feature",
-    "uri": "src/test/resources/Features/Login.feature",
-    "tags": []
+    "uri": "src/test/resources/Features/ContactUs.feature",
+    "tags": [
+      {
+        "name": "@ResAp",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

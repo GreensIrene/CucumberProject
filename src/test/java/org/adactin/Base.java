@@ -30,7 +30,7 @@ public class Base {
 	public static WebDriver driver;
 	JavascriptExecutor jk;
 
-	public WebDriver getDriver() {
+	public static WebDriver getDriver() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
